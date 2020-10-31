@@ -1,3 +1,13 @@
+**This is a custom fork of Realm by [Snappymob](https://www.snappymob.com) that fixes release build issues when including Realm as a dependency via Swift Package Manager (SPM). This fork based on `realm-cocoa v10.1.1` and `realm-core v10.0.0`.**
+
+**You can use it by including `git@github.com:snappymob/realm-cocoa.git` as the package repository with the specific revision `e16b9ab26bad6e3c2d1f5eb8840a052dce3a37f3`. This package also has a dependency on a patched `realm-core` version: [https://github.com/snappymob/realm-core](https://github.com/snappymob/realm-core).**
+
+**This fork may be useful if you are building for iOS in release mode or archiving and are getting build errors related to:**
+
+`aligned deallocation function of type 'void (void *, std::align_val_t) noexcept' is only available on iOS 11 or newer`
+
+---
+
 ![Realm](https://github.com/realm/realm-cocoa/raw/master/logo.png)
 
 Realm is a mobile database that runs directly inside phones, tablets or wearables.
